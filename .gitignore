@@ -1,2 +1,5 @@
 *.fastq
 *.fasta
+*~
+*__pycache__
+virtualenv/
