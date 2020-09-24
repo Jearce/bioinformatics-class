@@ -16,7 +16,7 @@ proteins to the query sequences.
 Clone this repository and change directories into this projects directory:
 ```
 git clone https://github.com/Jearce/bioinformatics-class.git
-cd bioinformatics-class/multihmmer_search
+cd bioinformatics-class/multihmmer_script
 
 ```
 
