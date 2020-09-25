@@ -13,22 +13,32 @@ proteins to the query sequences.
 
 ## Usage
 
-Clone this repository and change directories into this projects directory:
+Create `conda` environment and download muscle and hmmer:
+
+```
+conda create -n muscle_hmmer_env -c bioconda muscle hmmer
+```
+
+Activate `conda` environment:
+
+```
+conda activate muscle_hmmer_env
+```
+
+Clone this repository and change directories into this project's directory:
+
 ```
 git clone https://github.com/Jearce/bioinformatics-class.git
 cd bioinformatics-class/multihmmer_script
-
 ```
 
-First make execuatable:
+Make script execuatable:
 
 ```
 chmod +x multi_hmmer_search.sh
+```
+Run script with data:
 
 ```
-Run the script:
-
-```
-multi_hmmer_search <query> <in directory>
-
+./multi_hmmer_search <query> <directory>
 ```
