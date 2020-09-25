@@ -11,7 +11,7 @@ HMM created from `hmmbuild` is used to search in the fasta files that are in the
 proteins to the query sequences.
 
 
-## Usage
+## Installation
 
 Create `conda` environment and download muscle and hmmer:
 
@@ -31,6 +31,8 @@ Clone this repository and change directories into this project's directory:
 git clone https://github.com/Jearce/bioinformatics-class.git
 cd bioinformatics-class/multihmmer_script
 ```
+
+## Usage
 
 Make script execuatable:
 
