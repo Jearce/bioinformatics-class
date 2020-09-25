@@ -20,7 +20,7 @@ else
 fi
 
 #search in given protein sets
-for file in ${data_dir}/*
+for file in ${data_dir}/*.fasta
 do
   hmmsearch ${query}.hmm ${file} > ${results_dir}/${file}_results.txt 
 done
