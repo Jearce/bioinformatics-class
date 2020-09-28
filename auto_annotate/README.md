@@ -1,11 +1,8 @@
 # Auto Annotate With Prokka
-This bash script is designed to annotate prokayotic genomes using prokka. Just give the script a directory with genomes
-in it and prokka will be used to annotate them. Genomes must be in fasta format.
 
 ## About
-
-This is a bash script that takes a directy with prokayotic genomes, in fasta format, and uses `prokka` to annotate each fasta file. 
-
+This bash script is designed to annotate prokayotic genomes using `prokka`. Just give the script a directory with genomes
+in it and prokka will be used to annotate them. Genomes must be in fasta format.
 
 ## Installation
 
