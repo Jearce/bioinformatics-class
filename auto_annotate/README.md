@@ -35,18 +35,18 @@ cd bioinformatics-class/auto_annotate
 Make script execuatable:
 
 ```
-chmod +x auto_annotate.sh
+chmod +x annotate_genomes.sh
 ```
 Run script:
 
 ```
-./auto_annotate <directory>
+./annotate_genomes.sh <directory>
 ```
 The directory should have fasta files, ending with .fasta or .fna, in it. The prokka results for each annotated genome will be written to `annotation_results` directory.
 
 A second arguement is optional to specify the name of the output directory:
 
 ```
-./auto_annotate <directory> [output dir]
+./annotate_genomes.sh <directory> [output dir]
 ```
 
