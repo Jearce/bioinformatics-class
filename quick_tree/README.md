@@ -9,7 +9,7 @@
 ```
 conda create -n quick-tree-env -c bioconda -c conda-forge biopython muscle matplotlib
 conda activate quick-tree-env
-gti clone https://github.com/Jearce/bioinformatics-class.git
+git clone https://github.com/Jearce/bioinformatics-class.git
 cd bioinformatics-class/quick_tree
 python quick_tree.py --input seqs.fasta --output out
 ```
