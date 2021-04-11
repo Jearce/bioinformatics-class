@@ -1,17 +1,24 @@
 import pygame
 import sys
 
+from molecule import Molecule
+
 pygame.init()
+
+vector = pygame.math.Vector2
 
 size = width, height = 320, 240
 black = 0, 0, 0
 
+molecule1 = Molecule(
+    center=vector(50, 50), speed=vector(0.10, 0), radius=5, mass=0.2
+)
+
+molecule2 = Molecule(
+    center=vector(100, 50), speed=vector(-0.10, 0), radius=5, mass=0.2
+)
+
 screen = pygame.display.set_mode(size)
-
-center = pygame.math.Vector2((50, 50))
-radius = 5
-
-speed = pygame.math.Vector2((0.10, 0))
 
 while 1:
     for event in pygame.event.get():
@@ -20,15 +27,7 @@ while 1:
 
     screen.fill(black)
 
-    center += speed
+    molecule1.draw(screen)
+    molecule1.update(screen)
 
-    if not (radius < center.x < (width - radius)):
-        speed.x = -speed.x
-
-    if not (radius < center.y < (height - radius)):
-        speed.y = -speed.y
-
-    molecule = pygame.draw.circle(
-        screen, color="white", center=center, radius=5
-    )
     pygame.display.flip()
