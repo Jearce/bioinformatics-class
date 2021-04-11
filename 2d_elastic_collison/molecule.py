@@ -2,12 +2,16 @@ import pygame
 from pygame.math import Vector2
 
 
+def postion_time(s_o: Vector2, v_o: Vector2, a: Vector2):
+    return s_o + v_o + (0.5 * Vector2(a.x ** 2, a.y ** 2))
+
+
 class Molecule:
     def __init__(
         self,
         *,
         center: Vector2,
-        speed: Vector2,
+        velocity: Vector2,
         radius: int,
         mass: float,
     ):
@@ -15,7 +19,8 @@ class Molecule:
         self.color = "white"
         self.radius = radius
         self.mass = mass
-        self.speed = speed
+        self.velocity = velocity
+        self.accelaration = Vector2((0.01, 0.01))
 
     def draw(self, screen: pygame.Surface):
         return pygame.draw.circle(
@@ -23,16 +28,18 @@ class Molecule:
         )
 
     def update(self, screen: pygame.Surface):
-        self.center += self.speed
+        self.center = postion_time(
+            self.center, self.velocity, self.accelaration
+        )
 
         if not (
             self.radius < self.center.x < (screen.get_width() - self.radius)
         ):
-            self.speed.x = -self.speed.x
+            self.velocity.x = -self.velocity.x
 
         if not (
             self.radius < self.center.y < (screen.get_height() - self.radius)
         ):
-            self.speed.y = -self.speed.y
+            self.velocity.y = -self.velocity.y
 
         molecule = self.draw(screen)
