@@ -11,11 +11,11 @@ size = width, height = 320, 240
 black = 0, 0, 0
 
 molecule1 = Molecule(
-    center=vector(50, 50), speed=vector(0.10, 0), radius=5, mass=0.2
+    center=vector(50, 50), velocity=vector(0.05, 0), radius=5, mass=0.2
 )
 
 molecule2 = Molecule(
-    center=vector(100, 50), speed=vector(-0.10, 0), radius=5, mass=0.2
+    center=vector(300, 50), velocity=vector(-0.05, 0), radius=5, mass=0.2
 )
 
 screen = pygame.display.set_mode(size)
@@ -29,5 +29,8 @@ while 1:
 
     molecule1.draw(screen)
     molecule1.update(screen)
+
+    molecule2.draw(screen)
+    molecule2.update(screen)
 
     pygame.display.flip()
