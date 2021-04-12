@@ -1,4 +1,4 @@
-# Simulation of 2d elastic collision
+# Simulation of 2d elastic collision with [pygame](https://www.pygame.org/news)
 
 ## Download
 ```
