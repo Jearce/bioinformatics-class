@@ -20,7 +20,7 @@ class Molecule:
         self.radius = radius
         self.mass = mass
         self.velocity = velocity
-        self.accelaration = Vector2((0.01, 0.01))
+        self.acceleration = Vector2((0.01, 0.01))
 
     def draw(self, screen: pygame.Surface):
         return pygame.draw.circle(
@@ -29,7 +29,7 @@ class Molecule:
 
     def update(self, screen: pygame.Surface):
         self.center = postion_time(
-            self.center, self.velocity, self.accelaration
+            self.center, self.velocity, self.acceleration
         )
 
         if not (
