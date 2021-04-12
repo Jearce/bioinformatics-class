@@ -91,7 +91,7 @@ pydantic==1.7.3
 pydantic-to-typescript==1.0.6
 pydocstyle @ file:///home/conda/feedstock_root/build_artifacts/pydocstyle_1598747747227/work
 pyflakes==2.2.0
-Pygments==2.7.3
+Pygments==2.7.4
 pylint==2.6.0
 pynvim==0.4.3
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
