@@ -11,7 +11,7 @@ backcall==0.2.0
 beautifulsoup4 @ file:///home/conda/feedstock_root/build_artifacts/beautifulsoup4_1601745390275/work
 biopython @ file:///tmp/build/80754af9/biopython_1600351907932/work
 black==20.8b1
-bleach==3.2.1
+bleach==3.3.0
 brotlipy==0.7.0
 certifi==2020.12.5
 cffi==1.14.4
