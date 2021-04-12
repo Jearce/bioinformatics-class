@@ -12,15 +12,15 @@ class Molecule:
         *,
         center: Vector2,
         velocity: Vector2,
-        radius: int,
         mass: float,
     ):
         self.center = center
         self.color = "white"
-        self.radius = radius
         self.mass = mass
         self.velocity = velocity
+
         self.acceleration = Vector2((0.01, 0.01))
+        self.radius = self.mass * 1.25
 
     def draw(self, screen: pygame.Surface):
         return pygame.draw.circle(
