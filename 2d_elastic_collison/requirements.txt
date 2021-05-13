@@ -87,7 +87,7 @@ ptyprocess==0.6.0
 pycodestyle==2.6.0
 pycosat==0.6.3
 pycparser==2.20
-pydantic==1.7.3
+pydantic==1.7.4
 pydantic-to-typescript==1.0.6
 pydocstyle @ file:///home/conda/feedstock_root/build_artifacts/pydocstyle_1598747747227/work
 pyflakes==2.2.0
