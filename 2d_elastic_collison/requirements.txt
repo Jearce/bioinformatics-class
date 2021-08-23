@@ -45,7 +45,7 @@ jupyter-core==4.7.0
 jupyter-kite==1.2.0
 jupyter-lsp==0.9.3
 jupyter-server @ file:///home/conda/feedstock_root/build_artifacts/jupyter_server_1612496705427/work
-jupyterlab==2.2.9
+jupyterlab==2.2.10
 jupyterlab-lsp @ file:///home/conda/feedstock_root/build_artifacts/jupyter-lsp-meta_1613531035004/work/jupyterlab-lsp
 jupyterlab-pygments==0.1.2
 jupyterlab-server==1.2.0
