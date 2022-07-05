@@ -125,7 +125,7 @@ tqdm @ file:///tmp/build/80754af9/tqdm_1611857934208/work
 traitlets==5.0.5
 typed-ast==1.4.1
 typing-extensions==3.7.4.3
-ujson==4.0.1
+ujson==5.4.0
 urllib3 @ file:///tmp/build/80754af9/urllib3_1611694770489/work
 vim-vint==0.3.21
 virtualenv==20.1.0
