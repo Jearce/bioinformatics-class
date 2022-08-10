@@ -65,7 +65,7 @@ mypy==0.790
 mypy-extensions==0.4.3
 nbclassic @ file:///home/conda/feedstock_root/build_artifacts/nbclassic_1610352513187/work
 nbclient==0.5.1
-nbconvert==6.0.7
+nbconvert==6.3.0
 nbformat==5.0.8
 nest-asyncio==1.4.3
 notebook==6.1.5
