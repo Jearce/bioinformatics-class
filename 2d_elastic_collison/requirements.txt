@@ -51,7 +51,7 @@ jupyterlab-pygments==0.1.2
 jupyterlab-server==1.2.0
 kiwisolver @ file:///tmp/build/80754af9/kiwisolver_1612282420641/work
 lazy-object-proxy==1.4.3
-Mako==1.1.3
+Mako==1.2.2
 MarkupSafe==1.1.1
 matplotlib @ file:///tmp/build/80754af9/matplotlib-base_1603378225747/work
 matplotlib-venn==0.11.6
